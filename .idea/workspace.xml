@@ -1,7 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="145a5c46-68a3-43b8-89b6-a63cc348de1e" name="Default Changelist" comment="" />
+    <list default="true" id="145a5c46-68a3-43b8-89b6-a63cc348de1e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/mk/poc/parallel/core/ExecutorParallel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/mk/poc/parallel/core/IProcessadorExecutor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/mk/poc/parallel/core/ResultadoExecutor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/mk/poc/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/mk/poc/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/mk/poc/dto/ResultadoPosicaoEstoque.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/mk/poc/executors/PosicaoEstoqueParaleloExecutor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/mk/poc/executors/PosicaoEstoqueSequencialExecutor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/mk/poc/executors/RequestExecutor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/io/mk/poc/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/io/mk/poc/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/io/mk/poc/executors/PosicaoEstoqueParaleloExecutor$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/io/mk/poc/executors/PosicaoEstoqueParaleloExecutor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/io/mk/poc/executors/PosicaoEstoqueSequencialExecutor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/io/mk/poc/executors/RequestExecutor.class" beforeDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -12,29 +28,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/io/mk/poc/executors/PosicaoEstoqueParaleloExecutor.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="79" lean-forward="true" selection-start-line="18" selection-start-column="79" selection-end-line="18" selection-end-column="79" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/io/mk/poc/Resultado.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/io/mk/poc/parallel/core/ExecutorParallel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="4" lean-forward="true" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
+            <state relative-caret-position="272">
+              <caret line="19" column="13" lean-forward="true" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#216#217#0" expanded="true" />
-                <element signature="e#250#251#0" expanded="true" />
-                <element signature="e#186#187#0" expanded="true" />
-                <element signature="e#214#215#0" expanded="true" />
+                <element signature="e#483#484#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -43,8 +44,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/io/mk/poc/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="24" column="34" selection-start-line="24" selection-start-column="34" selection-end-line="24" selection-end-column="34" />
+            <state relative-caret-position="578">
+              <caret line="34" column="40" selection-start-line="34" selection-start-column="25" selection-end-line="34" selection-end-column="40" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -53,13 +54,48 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/io/mk/poc/executors/PosicaoEstoqueSequencialExecutor.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/io/mk/poc/parallel/process/PosicaoEstoqueProcessador.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="24" column="39" selection-start-line="24" selection-start-column="39" selection-end-line="24" selection-end-column="39" />
+            <state relative-caret-position="119">
+              <caret line="7" column="22" lean-forward="true" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/io/mk/poc/parallel/core/ResultadoExecutor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#244#245#0" expanded="true" />
+                <element signature="e#272#273#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/io/mk/poc/parallel/core/IProcessadorRequisicao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/io/mk/poc/parallel/core/IProcessadorExecutor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -81,6 +117,9 @@
       <find>158999</find>
     </findStrings>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -97,12 +136,30 @@
         <option value="$PROJECT_DIR$/src/main/java/io/mk/poc/entity/PosicaoEstoqueRequest.java" />
         <option value="$PROJECT_DIR$/src/main/java/io/mk/poc/dto/ResultadoPosicaoEstoque.java" />
         <option value="$PROJECT_DIR$/src/main/java/io/mk/poc/entity/Produto.java" />
-        <option value="$PROJECT_DIR$/src/main/java/io/mk/poc/executors/RequestExecutor.java" />
         <option value="$PROJECT_DIR$/src/main/java/io/mk/poc/executors/PosicaoEstoqueExecutor.java" />
         <option value="$PROJECT_DIR$/src/main/java/io/mk/poc/executors/PosicaoEstoqueSequencialExecutor.java" />
-        <option value="$PROJECT_DIR$/src/main/java/io/mk/poc/executors/PosicaoEstoqueParaleloExecutor.java" />
-        <option value="$PROJECT_DIR$/src/main/java/io/mk/poc/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/io/mk/poc/Resultado.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/mk/poc/ResultadoExecutor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/mk/poc/PosicaoEstoqueProcessador.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/mk/poc/ProcessadorRequisicao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/mk/poc/executors/PosicaoEstoqueParaleloExecutor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/mk/poc/DadosRequisicao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/mk/poc/executors/ExecutorParallel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/mk/poc/executors/RequestExecutor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/mk/poc/parallel/model/RequestExecutor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/mk/poc/parallel/model/ResultadoExecutor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/mk/poc/parallel/model/ProcessadorExecutor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/mk/poc/parallel/model/ProcessadorRequisicao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/mk/poc/parallel/model/IDadosRequisicao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/mk/poc/parallel/model/IProcessadorExecutor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/mk/poc/parallel/interfaces/IProcessadorExecutor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/mk/poc/parallel/core/DadosRequisicao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/mk/poc/parallel/core/PosicaoEstoqueProcessador.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/mk/poc/parallel/process/PosicaoEstoqueProcessador.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/mk/poc/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/mk/poc/parallel/core/IProcessadorExecutor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/mk/poc/parallel/core/IProcessadorRequisicao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/mk/poc/parallel/core/ExecutorParallel.java" />
       </list>
     </option>
   </component>
@@ -130,6 +187,7 @@
     <option name="width" value="1400" />
     <option name="height" value="1000" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -186,7 +244,7 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="mk" type="462c0819:PsiDirectoryNode" />
               <item name="poc" type="462c0819:PsiDirectoryNode" />
-              <item name="dto" type="462c0819:PsiDirectoryNode" />
+              <item name="parallel" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="executor" type="b2602c69:ProjectViewProjectNode" />
@@ -196,7 +254,8 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="mk" type="462c0819:PsiDirectoryNode" />
               <item name="poc" type="462c0819:PsiDirectoryNode" />
-              <item name="entity" type="462c0819:PsiDirectoryNode" />
+              <item name="parallel" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="executor" type="b2602c69:ProjectViewProjectNode" />
@@ -206,7 +265,8 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="mk" type="462c0819:PsiDirectoryNode" />
               <item name="poc" type="462c0819:PsiDirectoryNode" />
-              <item name="executors" type="462c0819:PsiDirectoryNode" />
+              <item name="parallel" type="462c0819:PsiDirectoryNode" />
+              <item name="process" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -216,6 +276,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
   </component>
   <component name="RunDashboard">
@@ -260,12 +321,12 @@
       <option name="presentableId" value="Default" />
       <updated>1561160317648</updated>
       <workItem from="1561160320467" duration="9668000" />
-      <workItem from="1561212157568" duration="2421000" />
+      <workItem from="1561212157568" duration="4913000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12089000" />
+    <option name="totallyTimeSpent" value="14581000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
@@ -284,7 +345,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32917964" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="11" />
       <window_info anchor="bottom" id="Messages" order="12" />
@@ -303,14 +364,14 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/io/mk/poc/executors/PosicaoEstoqueParaleloExecutor.java</url>
-          <line>73</line>
+          <url>file://$PROJECT_DIR$/src/main/java/io/mk/poc/parallel/core/ExecutorParallel.java</url>
+          <line>63</line>
           <properties />
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/io/mk/poc/executors/PosicaoEstoqueParaleloExecutor.java</url>
-          <line>27</line>
+          <url>file://$PROJECT_DIR$/src/main/java/io/mk/poc/parallel/core/ExecutorParallel.java</url>
+          <line>30</line>
           <properties />
           <option name="timeStamp" value="6" />
         </line-breakpoint>
@@ -381,21 +442,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/mk/poc/entity/PosicaoEstoqueRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="36" lean-forward="true" selection-start-line="4" selection-start-column="36" selection-end-line="4" selection-end-column="36" />
-          <folding>
-            <element signature="e#187#188#0" expanded="true" />
-            <element signature="e#227#228#0" expanded="true" />
-            <element signature="e#169#170#0" expanded="true" />
-            <element signature="e#200#201#0" expanded="true" />
-            <element signature="e#255#256#0" expanded="true" />
-            <element signature="e#295#296#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/io/mk/executor/Transacao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="476">
@@ -408,17 +454,65 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/mk/executor/TransacaoExecutorParalelo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="45" lean-forward="true" selection-start-line="45" selection-end-line="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-12.0.1/lib/src.zip!/java.base/java/util/concurrent/ExecutorService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="159">
+          <caret line="187" column="7" lean-forward="true" selection-start-line="183" selection-start-column="3" selection-end-line="187" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/mk/poc/dto/ResultadoPosicaoEstoque.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/mk/poc/executors/PosicaoEstoqueSequencialExecutor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="39" selection-start-line="8" selection-start-column="39" selection-end-line="8" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/io/mk/poc/entity/PosicaoEstoque.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="434">
-          <caret line="48" column="29" lean-forward="true" selection-start-line="48" selection-start-column="29" selection-end-line="48" selection-end-column="29" />
+        <state relative-caret-position="255">
+          <caret line="15" column="31" lean-forward="true" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/mk/poc/entity/PosicaoEstoqueRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+          <folding>
+            <element signature="e#227#228#0" expanded="true" />
+            <element signature="e#267#268#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/io/mk/poc/entity/Produto.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="35" lean-forward="true" selection-start-line="5" selection-start-column="35" selection-end-line="5" selection-end-column="35" />
+        <state relative-caret-position="408">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
           <folding>
             <element signature="e#208#209#0" expanded="true" />
             <element signature="e#240#241#0" expanded="true" />
@@ -440,37 +534,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/mk/executor/TransacaoExecutorParalelo.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/mk/poc/parallel/interfaces/IDadosRequisicao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="45" lean-forward="true" selection-start-line="45" selection-end-line="45" />
+        <state relative-caret-position="153">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/mk/poc/parallel/core/DadosRequisicao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/mk/poc/executors/RequestExecutor.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/mk/poc/parallel/process/PosicaoEstoqueProcessador.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
-          <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-12.0.1/lib/src.zip!/java.base/java/util/concurrent/ExecutorService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="187" column="7" lean-forward="true" selection-start-line="183" selection-start-column="3" selection-end-line="187" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/mk/poc/executors/PosicaoEstoqueParaleloExecutor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="79" lean-forward="true" selection-start-line="18" selection-start-column="79" selection-end-line="18" selection-end-column="79" />
+          <caret line="7" column="22" lean-forward="true" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -479,44 +563,50 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/io/mk/poc/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="24" column="34" selection-start-line="24" selection-start-column="34" selection-end-line="24" selection-end-column="34" />
+        <state relative-caret-position="578">
+          <caret line="34" column="40" selection-start-line="34" selection-start-column="25" selection-end-line="34" selection-end-column="40" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/mk/poc/executors/PosicaoEstoqueSequencialExecutor.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/mk/poc/parallel/core/ResultadoExecutor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="24" column="39" selection-start-line="24" selection-start-column="39" selection-end-line="24" selection-end-column="39" />
+        <state relative-caret-position="272">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#244#245#0" expanded="true" />
+            <element signature="e#272#273#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/mk/poc/dto/ResultadoPosicaoEstoque.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/mk/poc/Resultado.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/mk/poc/parallel/core/IProcessadorRequisicao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
-          <caret line="6" column="4" lean-forward="true" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#216#217#0" expanded="true" />
-            <element signature="e#250#251#0" expanded="true" />
-            <element signature="e#186#187#0" expanded="true" />
-            <element signature="e#214#215#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/mk/poc/parallel/core/IProcessadorExecutor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/mk/poc/parallel/core/ExecutorParallel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="19" column="13" lean-forward="true" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#483#484#0" expanded="true" />
           </folding>
         </state>
       </provider>
