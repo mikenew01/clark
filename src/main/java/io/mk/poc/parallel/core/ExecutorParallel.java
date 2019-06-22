@@ -16,9 +16,9 @@ public class ExecutorParallel implements IProcessadorExecutor {
         return new ExecutorParallel();
     }
 
-    public ResultadoExecutor run(DadosRequisicao dadosRequisicao, IProcessadorRequisicao processadorRequisicao) {
+    public ResultadoExecutor run(final DadosRequisicao dadosRequisicao, final IProcessadorRequisicao processadorRequisicao) {
         try {
-            final List<Future<ResultadoExecutor>> resultadosExecutors = new LinkedList<>();
+            List<Future<ResultadoExecutor>> resultadosExecutors = new LinkedList<>();
 
             Integer i = 0,
                     inicialSubLista = 0,
@@ -31,7 +31,7 @@ public class ExecutorParallel implements IProcessadorExecutor {
                 if (posicaoFinal > dadosRequisicao.getLista().size())
                     posicaoFinal = dadosRequisicao.getLista().size();
 
-                List lista = dadosRequisicao.getLista().subList(inicialSubLista, posicaoFinal);
+                final List lista = dadosRequisicao.getLista().subList(inicialSubLista, posicaoFinal);
 
                 Future<ResultadoExecutor> resultadoExecutorFuture = executorService.submit(new Callable<ResultadoExecutor>() {
                     @Override
@@ -46,7 +46,7 @@ public class ExecutorParallel implements IProcessadorExecutor {
                 i++;
             }
 
-            final ResultadoExecutor resultadoFinal = new ResultadoExecutor();
+            ResultadoExecutor resultadoFinal = new ResultadoExecutor();
             for (Future<ResultadoExecutor> future : resultadosExecutors) {
                 try {
                     resultadoFinal.getLista().addAll(future.get().getLista());
