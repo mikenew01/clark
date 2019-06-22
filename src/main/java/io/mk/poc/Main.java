@@ -34,5 +34,8 @@ public class Main {
                 .getInstance()
                 .run(new DadosRequisicao<>(request.getProdutos()), new PosicaoEstoqueProcessador());
         System.out.println(resultadoPosicaoEstoque.getLista().size());
+
+
+
     }
 }
