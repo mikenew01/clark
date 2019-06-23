@@ -1,4 +1,4 @@
-package io.mk.poc.entity;
+package io.mk.clark.entity;
 
 public class PosicaoEstoque {
 
