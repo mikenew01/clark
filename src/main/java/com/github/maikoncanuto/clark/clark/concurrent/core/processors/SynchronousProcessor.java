@@ -1,9 +1,9 @@
-package io.mk.clark.concurrent.core.processors;
+package com.github.maikoncanuto.clark.clark.concurrent.core.processors;
 
-import io.mk.clark.concurrent.core.realms.Data;
-import io.mk.clark.concurrent.core.realms.Processor;
-import io.mk.clark.concurrent.core.realms.Result;
-import io.mk.clark.concurrent.core.types.ProcessorType;
+import com.github.maikoncanuto.clark.clark.concurrent.core.realms.Data;
+import com.github.maikoncanuto.clark.clark.concurrent.core.realms.Result;
+import com.github.maikoncanuto.clark.clark.concurrent.core.types.ProcessorType;
+import com.github.maikoncanuto.clark.clark.concurrent.core.realms.Processor;
 
 import java.util.concurrent.ExecutionException;
 

@@ -1,4 +1,4 @@
-package io.mk.clark.entity;
+package com.github.maikoncanuto.clark.entity;
 
 public class Produto {
 

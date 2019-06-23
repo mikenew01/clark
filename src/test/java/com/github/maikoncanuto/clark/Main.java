@@ -1,13 +1,13 @@
-package io.mk.clark;
+package com.github.maikoncanuto.clark;
 
-import io.mk.clark.concurrent.core.handlers.ProcessorHandler;
-import io.mk.clark.concurrent.core.realms.Data;
-import io.mk.clark.concurrent.core.realms.Result;
-import io.mk.clark.concurrent.core.realms.Type;
-import io.mk.clark.entity.PosicaoEstoque;
-import io.mk.clark.entity.PosicaoEstoqueRequest;
-import io.mk.clark.entity.Produto;
-import io.mk.clark.processors.PosicaoEstoqueProcessor;
+import com.github.maikoncanuto.clark.clark.concurrent.core.handlers.ProcessorHandler;
+import com.github.maikoncanuto.clark.clark.concurrent.core.realms.Data;
+import com.github.maikoncanuto.clark.clark.concurrent.core.realms.Result;
+import com.github.maikoncanuto.clark.clark.concurrent.core.realms.Type;
+import com.github.maikoncanuto.clark.entity.PosicaoEstoque;
+import com.github.maikoncanuto.clark.entity.PosicaoEstoqueRequest;
+import com.github.maikoncanuto.clark.entity.Produto;
+import com.github.maikoncanuto.clark.processors.PosicaoEstoqueProcessor;
 
 import java.util.Date;
 import java.util.LinkedList;

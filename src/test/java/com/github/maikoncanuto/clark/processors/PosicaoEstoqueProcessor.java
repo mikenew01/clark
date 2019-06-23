@@ -1,9 +1,9 @@
-package io.mk.clark.processors;
+package com.github.maikoncanuto.clark.processors;
 
-import io.mk.clark.entity.PosicaoEstoque;
-import io.mk.clark.entity.Produto;
-import io.mk.clark.concurrent.core.realms.Processor;
-import io.mk.clark.concurrent.core.realms.Result;
+import com.github.maikoncanuto.clark.entity.PosicaoEstoque;
+import com.github.maikoncanuto.clark.entity.Produto;
+import com.github.maikoncanuto.clark.clark.concurrent.core.realms.Processor;
+import com.github.maikoncanuto.clark.clark.concurrent.core.realms.Result;
 
 import java.util.List;
 
