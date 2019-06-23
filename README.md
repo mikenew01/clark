@@ -21,17 +21,17 @@ To use the framework it is necessary that you have configured version 3 of maven
 //hidden imports 
 
 //Class responsible for containing processing logic
-public class ExampleProcessor implements Processor<Long, Integer> {
+public class ExampleProcessor implements Processor<String, Integer> {
 
     @Override
     public Result<Long> run(final List<Integer> list) {
-        List<Long> numbersLongs = new LinkedList<>();
-        
-        for(Integer number : list){
-           numbersLongs.add(Long.valueOf(number));   
+        Result<String> result = new Result<String>();
+
+        for (Integer i : list) {
+            result.getProcessedElements().add(i + " - Test");
         }
-        
-        return numbersLongs;
+
+        return result;
     }
 }
 
@@ -41,7 +41,7 @@ public class Main {
 
         List<Integer> numbers = Arrays.asList(1, 2, 3, 4);
 
-        Result<Long> result = ProcessorHandler
+        Result<String> result = ProcessorHandler
                         .getProcessor(Type.ASYNCHRONOUS)
                         .run(new Data<>(numbers), new ExampleProcessor());
 
