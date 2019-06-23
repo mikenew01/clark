@@ -24,7 +24,7 @@ To use the framework it is necessary that you have configured version 3 of maven
 public class ExampleProcessor implements Processor<String, Integer> {
 
     @Override
-    public Result<Long> run(final List<Integer> list) {
+    public Result<String> run(final List<Integer> list) {
         Result<String> result = new Result<String>();
 
         for (Integer i : list) {
