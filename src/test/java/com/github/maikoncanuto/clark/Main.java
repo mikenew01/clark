@@ -19,7 +19,7 @@ public class Main {
     public static void main(String[] args) throws ExecutionException, InterruptedException {
 
         List<Produto> produtos = new LinkedList<>();
-        for (int i = 0; i < 5000; i++) {
+        for (int i = 0; i < 700000; i++) {
             Produto produto = new Produto();
             produto.setEstabelecimento("Estabelecimento " + i + " " + new Date());
             produto.setProduto("Produto " + i + " " + new Date());
@@ -33,7 +33,7 @@ public class Main {
 
         Result<PosicaoEstoque> resultado =
                 ProcessorHandler
-                        .getProcessor(Type.ASYNCHRONOUS)
+                        .getProcessor(Type.SYNCHRONOUS)
                         .run(new Data<>(request.getProdutos()), new PosicaoEstoqueProcessor());
 
         System.out.println(resultado.getProcessedElements().size());

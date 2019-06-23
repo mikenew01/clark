@@ -11,6 +11,11 @@ import java.util.concurrent.*;
 
 import static java.lang.Math.*;
 
+/***
+ * Class responsible for containing parallel processing logic.
+ *
+ * @author Maikon Canuto.
+ */
 public class AsynchronousProcessor implements ProcessorType {
 
     private final Integer NUMBER_PROCESSORS = Runtime.getRuntime().availableProcessors();
@@ -19,10 +24,26 @@ public class AsynchronousProcessor implements ProcessorType {
     private AsynchronousProcessor() {
     }
 
+    /***
+     * Method for creating an instance of the Asynchronous class.
+     *
+     * @return AsynchronousProcessor
+     */
     public static AsynchronousProcessor getInstance() {
         return new AsynchronousProcessor();
     }
 
+    /***
+     * Method for asynchronous processing receiving
+     * @param data with information for processing and a
+     * @param processor for determining the custom processor.
+     *
+     * @param data
+     * @param processor
+     * @return Result<T>
+     * @throws ExecutionException
+     * @throws InterruptedException
+     */
     public Result run(final Data data, final Processor processor) throws ExecutionException, InterruptedException {
         try {
             final List<Future<Result>> results = new LinkedList<>();
@@ -30,9 +51,9 @@ public class AsynchronousProcessor implements ProcessorType {
 
             Integer index = 0, initialPosition = 0,
                     positionOrigin = dataElementsToProcess.size(),
-                    itemsByList = round(dataElementsToProcess.size() / NUMBER_PROCESSORS);
+                    itemsByList = getItemsByData(dataElementsToProcess.size(), NUMBER_PROCESSORS);
 
-            while ((index < NUMBER_PROCESSORS) || !(initialPosition > dataElementsToProcess.size())) {
+            while (getProcessingCondition(index, initialPosition, dataElementsToProcess.size(), positionOrigin)) {
                 Integer finalPosition = initialPosition + itemsByList;
 
                 if (finalPosition > dataElementsToProcess.size())
@@ -60,5 +81,38 @@ public class AsynchronousProcessor implements ProcessorType {
         } finally {
             executorService.shutdown();
         }
+    }
+
+    /***
+     * Method for determining the quantity of items per batch.
+     *
+     * @param dataSize
+     * @param numberProcessors
+     * @return Integer
+     */
+    private Integer getItemsByData(final Integer dataSize, final Integer numberProcessors){
+        if(NUMBER_PROCESSORS <= 0)
+            return dataSize;
+
+        if(dataSize <= numberProcessors)
+            return dataSize;
+
+        return round(dataSize / NUMBER_PROCESSORS);
+    }
+
+    /***
+     * Method for determining the stop condition during the processing action.
+     *
+     * @param index
+     * @param initialPosition
+     * @param dataSize
+     * @param positionOrigin
+     * @return Boolean
+     */
+    private Boolean getProcessingCondition(final Integer index,
+                                           final Integer initialPosition,
+                                           final Integer dataSize,
+                                           final Integer positionOrigin){
+        return ((index < NUMBER_PROCESSORS) || !(initialPosition > dataSize)) && positionOrigin > 0;
     }
 }
