@@ -7,6 +7,16 @@ Project clark aims to provide a library for parallel data processing.
 To use the framework it is necessary that you have configured version 3 of maven and java 7 in the project.
 
 ### Example of use:
+````maven
+  <dependencies>
+      <dependency>
+          <groupId>com.github.maikoncanuto</groupId>
+          <artifactId>clark</artifactId>
+          <version>1.0</version>
+      </dependency>
+  </dependencies>
+````
+
 ````java
 //hidden imports 
 
