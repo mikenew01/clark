@@ -12,7 +12,7 @@ To use the framework it is necessary that you have configured version 3 of maven
       <dependency>
           <groupId>com.github.maikoncanuto</groupId>
           <artifactId>clark</artifactId>
-          <version>1.0</version>
+          <version>1.0.1</version>
       </dependency>
   </dependencies>
 ````
