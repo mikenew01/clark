@@ -1,4 +1,4 @@
-package com.github.maikoncanuto.clark.clark.concurrent.core.realms;
+package com.github.maikoncanuto.clark.concurrent.core.realms;
 
 import java.util.List;
 

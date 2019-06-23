@@ -1,9 +1,9 @@
 package com.github.maikoncanuto.clark;
 
-import com.github.maikoncanuto.clark.clark.concurrent.core.handlers.ProcessorHandler;
-import com.github.maikoncanuto.clark.clark.concurrent.core.realms.Data;
-import com.github.maikoncanuto.clark.clark.concurrent.core.realms.Result;
-import com.github.maikoncanuto.clark.clark.concurrent.core.realms.Type;
+import com.github.maikoncanuto.clark.concurrent.core.handlers.ProcessorHandler;
+import com.github.maikoncanuto.clark.concurrent.core.realms.Data;
+import com.github.maikoncanuto.clark.concurrent.core.realms.Result;
+import com.github.maikoncanuto.clark.concurrent.core.realms.Type;
 import com.github.maikoncanuto.clark.entity.PosicaoEstoque;
 import com.github.maikoncanuto.clark.entity.PosicaoEstoqueRequest;
 import com.github.maikoncanuto.clark.entity.Produto;
