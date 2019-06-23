@@ -12,9 +12,7 @@ import com.github.maikoncanuto.clark.concurrent.core.realms.Type;
  */
 public class ProcessorHandler {
 
-    private ProcessorHandler() {
-    }
-
+    private ProcessorHandler() {}
 
     /***
      * Method to retrieve the instance type for the ProcessorType

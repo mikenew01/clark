@@ -33,7 +33,7 @@ public class Main {
 
         Result<PosicaoEstoque> resultado =
                 ProcessorHandler
-                        .getProcessor(Type.SYNCHRONOUS)
+                        .getProcessor(Type.ASYNCHRONOUS)
                         .run(new Data<>(request.getProdutos()), new PosicaoEstoqueProcessor());
 
         System.out.println(resultado.getProcessedElements().size());

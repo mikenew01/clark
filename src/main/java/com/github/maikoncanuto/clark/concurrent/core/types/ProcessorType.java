@@ -16,6 +16,15 @@ import java.util.concurrent.ExecutionException;
  */
 public interface ProcessorType<T, K> {
 
+    /***
+     * Method responsible for containing the processing logic.
+     *
+     * @param data
+     * @param processor
+     * @return
+     * @throws ExecutionException
+     * @throws InterruptedException
+     */
     Result run(Data<T> data, Processor<T, K> processor) throws ExecutionException, InterruptedException;
 
 }
